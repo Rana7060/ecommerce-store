@@ -1,9 +1,10 @@
 import React from "react";
+import img from "./background.jpg";
 
 const Reviews = () => {
   return (
     <div className="my-5">
-      <h2>Reviews</h2>
+      <h2 className="m-4 p-4">Reviews</h2>
       <div className="container">
         <div className="row">
           <div className="col">
@@ -25,15 +26,13 @@ const Reviews = () => {
           </div>
           <div className="col">
             <div className="card bg-dark text-white">
-              <img src="" className="card-img" alt="hey" />
+              <img src={img} className="card-img blur" alt="hey" />
               <div className="card-img-overlay">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p className="card-text">Last updated 3 mins ago</p>
+                <h2 className="card-title">Find things you'll love.</h2>
+                <button className="card-text btn btn-secondary">
+                  SHOP NOW ▶
+                </button>
+                <p className="card-text"></p>
               </div>
             </div>
           </div>

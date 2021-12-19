@@ -2,3 +2,13 @@
   text-align: center;
   padding: 0px 0px;
 }
+.style {
+  width: 15rem;
+}
+.blur {
+  filter: blur(5px);
+  height: 15rem;
+}
+.bi-star-fill {
+  color: rgb(241, 241, 50);
+}
