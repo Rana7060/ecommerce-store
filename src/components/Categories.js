@@ -1,7 +1,7 @@
 import React from "react";
-import men from "./men.jpg";
-import women1 from "./women1.png";
-import bag from "./bag.png";
+import men from "./img/men.jpg";
+import women1 from "./img/women1.png";
+import bag from "./img/bag.png";
 
 const Categories = () => {
   return (

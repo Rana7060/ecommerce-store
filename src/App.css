@@ -12,3 +12,7 @@
 .bi-star-fill {
   color: rgb(241, 241, 50);
 }
+.card-img-top {
+  width: auto;
+  height: 25rem;
+}

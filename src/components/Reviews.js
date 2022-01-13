@@ -1,5 +1,5 @@
 import React from "react";
-import img from "./background.jpg";
+import img from "./img/background.jpg";
 
 const Reviews = () => {
   return (
