@@ -14,5 +14,9 @@
 }
 .card-img-top {
   width: auto;
-  height: 25rem;
+  height: 15rem;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 15px 5px #c9c9c9;
 }
