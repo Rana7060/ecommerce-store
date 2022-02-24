@@ -1,8 +1,6 @@
 import React from "react";
-import Card from "./Card";
-import product1 from "./img/handbag-1.jpg";
-import product2 from "./img/handbag-2.jpg";
-import product3 from "./img/handbag-3.jpg";
+
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,7 +10,7 @@ const Navbar = () => {
           {/* navbar items */}
 
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#main-nav"
@@ -20,19 +18,20 @@ const Navbar = () => {
             aria-expanded="true"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
+
           {/* <a href="#intro" class="navbar-brand">
               <span class="fw-bold text-secondary">Portfol</span>
             </a> */}
 
           <div
-            class="collapse navbar-collapse justify-content-around align-center"
+            className="collapse navbar-collapse justify-content-around align-center"
             id="main-nav"
           >
-            <a href="#intro" className="navbar-brand">
-              <span className="fw-bold text-secondary">Brand</span>
-            </a>
+            <Link to="/homepage" href="#intro" className="navbar-brand">
+              <span className="fw-bold text-secondary">®Eve's Shop</span>
+            </Link>
 
             {/* search bar */}
             <div className="d-none d-sm-none d-md-flex d-lg-flex">
@@ -51,15 +50,15 @@ const Navbar = () => {
             </div>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="#home">
+                <Link to="/homepage" className="nav-link" href="#home">
                   Home
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#products">
-                  Women
-                </a>
+                <Link to="categories" className="nav-link" href="#products">
+                  Products
+                </Link>
               </li>
 
               <li className="nav-item">
@@ -77,7 +76,7 @@ const Navbar = () => {
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  href="/"
                   id="navbarScrollingDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -90,14 +89,14 @@ const Navbar = () => {
                   aria-labelledby="navbarScrollingDropdown"
                 >
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="/signin" className="dropdown-item" href="/">
                       Login
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link to="/signup" className="dropdown-item" href="/">
                       Create Account
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -107,39 +106,6 @@ const Navbar = () => {
 
         {/* navbar */}
       </nav>
-
-      {/* Home screen */}
-      <div className="mt-5 p-5 bg-light">
-        <h3 className="mb-3">Trending Products</h3>
-        <div className="container">
-          <div className="row justify-content-around">
-            <div className="col-9 col-lg-3 col-xl-3">
-              <Card
-                name="my bag"
-                description="a good quality bag"
-                src={product1}
-                price="20 $"
-              />
-            </div>
-            <div className="col-9 col-lg-3 col-xl-3">
-              <Card
-                name="tweety bag"
-                description="high quality"
-                src={product2}
-                price="15 $"
-              />
-            </div>
-            <div className="col-9 col-lg-3 col-xl-3">
-              <Card
-                name="marshmello bag"
-                description="bad quality"
-                src={product3}
-                price="10 $"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* main div */}
     </div>

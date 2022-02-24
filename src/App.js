@@ -1,18 +1,25 @@
 import "./App.css";
-import Categories from "./components/Categories";
-import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Products from "./components/Products";
-import Reviews from "./components/Reviews";
+import SignUp from "./components/SignUp";
+import Footer from "./components/Footer";
+import Homepage from "./components/Homepage";
+import SignIn from "./components/SignIn";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App organize">
       <Navbar />
-      <Products />
-      <Categories />
-      <Reviews />
-      <Footer />
+      <br />
+      <br />
+
+      <Routes>
+        <Route path="/homepage" element={<Homepage />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signin" element={<SignIn />} />
+      </Routes>
+      <br />
+      <Footer className="item-3" />
     </div>
   );
 }

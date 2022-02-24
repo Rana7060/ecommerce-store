@@ -20,3 +20,45 @@
   transform: scale(1.1);
   box-shadow: 2px 2px 15px 5px #c9c9c9;
 }
+.center-div {
+  transform: translate(0px, 20%);
+}
+/* .style-footer {
+  background-color: "#F8F8F8";
+  border-top: "1px solid #E7E7E7";
+  padding: "20px";
+  position: "fixed";
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+} */
+
+.form-signin {
+  text-align: center;
+  margin: auto;
+  width: 30%;
+  /* border: 5px solid #ffff00; */
+  padding: 10px;
+  top: 50%;
+  /* transform: translate(0, 50%); */
+}
+.organize {
+  display: flex;
+  flex-direction: column;
+}
+.item-3 {
+  align-items: flex-end;
+}
+
+.form-signup {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  top: 50%;
+}
+footer {
+  bottom: 0%;
+}
